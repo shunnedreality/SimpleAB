@@ -1,0 +1,10 @@
+{
+  "name": "Packages",
+  "tree": {
+    "$className": "Folder",
+    "$path": "Packages",
+    "SimpleAB": {
+      "$path": "src"
+    }
+  }
+}
