@@ -1,5 +1,5 @@
 # SimpleAB
-Simple is in the name, this is an extremely lightweight testing utility that helps you create up to 3 testing variants (Control, A, B). It automatically assigns a server-persistent variant to a given UserId. While you can use SimpleAB by itself to manage testing variants, you can also connect the given variant to Roblox Analytics to give more information for your testing.
+Simple is in the name, this is an extremely lightweight testing utility that helps you create up to 3 testing variants (Control, A, B). It automatically assigns a server-persistent variant to a given UserId. While you can use SimpleAB by itself to manage testing variants, you can also connect the given variant to Analytics Service to give more information for your testing.
 
 **Wally: `shunnedreality/simpleab`**
 
@@ -40,7 +40,7 @@ local variant = 0
 print(Test:getVariantLabel(variant)) --Output: "VariantA"
 ```
 
-## Using with Roblox analytics
+## Using with Analytics
 Simply pass the variant with the `customFields` property in any `AnalyticsService` log function.
 ```
 AnalyticsService:LogCustomEvent(Player, "OpenShop", 1, {
